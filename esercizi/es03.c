@@ -9,17 +9,26 @@ int main (){
 
     char junk;
 
-    printf("inserisci il primo valore");
+    printf("inserisci il primo valore ");
     scanf("%f" , &a);
     junk = getchar();
 
-    printf("inserisci il 2 valore");
+    printf("inserisci il 2 valore ");
     scanf("%f" , &b);
     junk = getchar();
 
-    printf("inserisci il 3 valore");
+    printf("inserisci il 3 valore ");
     scanf("%f" , &c);
     junk = getchar();
-    
+
+    avg=(a+b+c)/3;
+
+    if(avg>=6){
+        printf("promosso");
+    }else{
+        printf("bocciato");
+
+    }
+        return  0;
 }
 
